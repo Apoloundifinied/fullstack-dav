@@ -1,5 +1,5 @@
 :HL["/fullstack-dav/_next/static/media/eaabd3944d2a50d2-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
-:HL["/fullstack-dav/_next/static/css/71d36f5f2cb153ff.css","style"]
+:HL["/fullstack-dav/_next/static/css/02ad408e36422eec.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"vgpEg81WMJIgy8NRHK8_m","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"DxRMZjh1yznpCaB_bmPwB","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
