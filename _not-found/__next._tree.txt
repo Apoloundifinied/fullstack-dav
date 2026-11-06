@@ -1,0 +1,5 @@
+:HL["/fullstack-dav/_next/static/media/eaabd3944d2a50d2-s.p.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+:HL["/fullstack-dav/_next/static/css/754a34ad140bdd1a.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"SKZegxWIMHNDjXyYPaxDA","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
