@@ -1,4 +1,4 @@
 :HL["/fullstack-dav/_next/static/chunks/2uzyff34_ayy7.css","style"]
 :HL["/fullstack-dav/_next/static/media/jost-s.p.3hi2rzun30dbh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"Efi_qiIzCl4NjiHBhAX31","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"sTjkJ13I0hHSA2-UzR4q2","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
