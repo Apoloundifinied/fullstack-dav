@@ -5,8 +5,6 @@ const jost = localFont({ src: "../../public/fonts/jost.ttf", variable: "--font-j
 export const metadata: Metadata = {
   title: "Fullstack — Desenvolvimento & Criação Visual",
   description: "Portfólio de Fullstack: desenvolvimento Full Stack, automação, integrações com IA, edição de foto e vídeo e motion design.",
-  // Base em preparação: liberar indexação após revisão editorial e domínio confirmado.
-  robots: { index: false, follow: false },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="pt-BR"><body className={jost.variable}>{children}</body></html>;

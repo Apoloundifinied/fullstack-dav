@@ -24,10 +24,12 @@ Copie o conteúdo de `pages-out/` para a raiz antes de publicar. O `basePath` e 
 ## Estrutura
 
 - `src/components/sections/hero.tsx`: apresentação inicial.
-- `src/components/sections/stack.tsx`: linguagens, frameworks, ferramentas e competências.
-- `src/components/experience/work.tsx`: projetos e detalhes.
-- `src/components/experience/creative.tsx`: seção Imagem & Motion.
+- `src/components/sections/about.tsx`: apresentação e trajetória.
+- `src/components/sections/stack.tsx`: stack técnica, automação, IA, infraestrutura, segurança e criação visual.
+- `src/components/experience/work.tsx`: projetos, capturas e detalhes.
+- `src/components/theme-toggle.tsx`: alternância manual com preferência inicial do sistema.
+- `src/components/sections/marquee.tsx`: faixa de áreas de atuação.
 - `src/data/portfolio.ts`: perfil e projetos.
 - `public/images/`: imagens e logos.
 
-O tema respeita a preferência de claro/escuro do sistema operacional ou navegador.
+O tema segue a preferência de claro/escuro do navegador até uma escolha manual.

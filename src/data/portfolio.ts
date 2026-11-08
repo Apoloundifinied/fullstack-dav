@@ -2,7 +2,7 @@ import type { CreativeWork, Project } from "@/types/portfolio";
 
 // Fonte editorial: skillrobson.md. Preencher somente com dados confirmados.
 export const profile = {
-  name: "Fullstack",
+  name: "Robson",
   location: "Rio Grande do Sul, Brasil",
   headline: "Software, automação e criação visual.",
   description: "Desenvolvimento Full Stack, ferramentas e integrações com IA. Também trabalho com edição de foto, vídeo e motion design.",
