@@ -304,3 +304,19 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .feature-case { margin:8px 0; font-size:9px; color:var(--muted); }
 .feature-fields { display:grid; grid-template-columns:1fr 1fr; gap:14px; padding-top:7px; border-top:1px solid var(--line); font-size:9px; color:var(--muted); }
 .hero-feature > .feature-badge { left:14px; bottom:10px; padding:4px 8px; font-size:8px; }
+
+.lab-jump { display:inline-block; margin-top:10px; color:var(--accent); border-bottom:1px solid var(--line); }
+.lab-section { padding-block:0 100px; }
+.lab-section .section-heading h2 { font-size:clamp(40px,6vw,64px); letter-spacing:-.06em; }
+.lab-section .project-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.lab-section .project-open { display:flex; flex-direction:column; min-height:100%; }
+.lab-section .project-image { width:100%; height:240px; min-height:0; padding:42px 18px 20px; order:0; }
+.lab-section .project-cover-art { width:150px; }
+.lab-section .project-cover-name { font-size:11px; }
+.lab-section .project-copy { flex:1; width:100%; justify-content:flex-start; padding:24px; }
+.lab-section .project-copy h3 { font-size:26px; line-height:1.15; }
+.lab-section .project-copy > p { font-size:13px; }
+.lab-section .project-link { margin-top:auto; padding-top:20px; }
+@media(max-width:900px) { .lab-section .project-grid { grid-template-columns:1fr; } .lab-section .project-cover-art { width:170px; } .lab-section .project-image { height:280px; } }
+
+.lab-section .project-card:nth-child(even) .project-image { order:0; }

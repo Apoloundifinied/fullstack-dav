@@ -14,6 +14,7 @@ export const profile = {
 export const projects: Project[] = [
   {
     slug: "aprova",
+    featured: true,
     name: "Aprova",
     description: "Plataforma de revisão de entregas criativas com feedback e aprovação por versão.",
     cover: "/images/projects/covers/aprova.webp",
@@ -29,6 +30,7 @@ export const projects: Project[] = [
   },
   {
     slug: "blind-mcp",
+    featured: true,
     name: "Blind MCP",
     description: "Ferramenta que usa evidências do código para transformar diferenciais de produto em hipóteses testáveis.",
     cover: "/images/projects/covers/blind-mcp.webp",
@@ -41,6 +43,35 @@ export const projects: Project[] = [
     details: "O servidor MCP lê trechos de um repositório autorizado e gera um protocolo com hipótese, evidências e critério de sucesso. A demo pública permite revisar e exportar o rascunho do caso Aprova versus aprovação por chat. O teste com participantes está pendente.",
     repository: "https://github.com/Apoloundifinied/blind-mcp",
     demo: "https://blind-mcp.vercel.app/",
+  },
+  {
+    slug: "forge-deploy",
+    featured: true,
+    name: "Forge Deploy",
+    description: "Painel de deploy com estados de publicação, logs ao vivo e histórico de versões.",
+    cover: "/images/projects/covers/forge-deploy.webp",
+    coverLabel: "Ilustração autoral",
+    coverAlt: "Capa ilustrada de forge-deploy: gravura sobre fundo colorido",
+    screenshot: "/images/projects/forge-deploy.webp",
+
+    tags: ["Rust", "Leptos", "WebAssembly", "Axum", "Docker"],
+    status: "Concluído",
+    details: "MVP local que reúne publicação, monitoramento e rollback em uma interface. O painel em Leptos mostra o estado real dos deploys e atualiza os logs via SSE. O código e as instruções para rodar estão no GitHub.",
+    repository: "https://github.com/robsonldasilva72-gif/Forge-deploy",
+  },
+  {
+    slug: "visual-automation",
+    featured: true,
+    name: "Visual Automation Engine",
+    description: "Editor visual de automações com canvas de nós, inspetor e resultados de execução.",
+    cover: "/images/projects/covers/visual-automation.webp",
+    coverLabel: "Ilustração autoral",
+    coverAlt: "Capa ilustrada de visual-automation: gravura sobre fundo colorido",
+    screenshot: "/images/projects/visual-automation.webp",
+
+    tags: ["TypeScript", "Fastify", "Canvas de nós", "UI de ferramentas"],
+    status: "Protótipo",
+    details: "O editor permite montar fluxos, configurar etapas no inspetor e acompanhar a execução. Um exemplo consulta repositórios públicos do GitHub, filtra dados e apresenta resultados em tabela ou JSON. O protótipo roda localmente.",
   },
   {
     slug: "mutant-factory",
@@ -57,19 +88,6 @@ export const projects: Project[] = [
     tags: ["Luau", "Roblox", "HUD", "Economia de jogo", "Arte conceitual 2D"],
     status: "Protótipo",
     details: "O código inclui um HUD para celular e PC, inventário, coleta de sucata, renda e melhorias de produção. O kit inclui cards de criaturas, ícones e capas conceituais. A execução ainda precisa ser validada no Roblox Studio.",
-  },
-  {
-    slug: "visual-automation",
-    name: "Visual Automation Engine",
-    description: "Editor visual de automações com canvas de nós, inspetor e resultados de execução.",
-    cover: "/images/projects/covers/visual-automation.webp",
-    coverLabel: "Ilustração autoral",
-    coverAlt: "Capa ilustrada de visual-automation: gravura sobre fundo colorido",
-    screenshot: "/images/projects/visual-automation.webp",
-
-    tags: ["TypeScript", "Fastify", "Canvas de nós", "UI de ferramentas"],
-    status: "Protótipo",
-    details: "O editor permite montar fluxos, configurar etapas no inspetor e acompanhar a execução. Um exemplo consulta repositórios públicos do GitHub, filtra dados e apresenta resultados em tabela ou JSON. O protótipo roda localmente.",
   },
   {
     slug: "dozena",
@@ -98,20 +116,6 @@ export const projects: Project[] = [
     status: "Protótipo",
     details: "A interface ajuda concurseiros a verificar se a cidade está coberta e entrar na lista de espera. O repositório documenta o autocomplete de municípios, a página de cobertura por estado e o fluxo de confirmação por e-mail.",
     repository: "https://github.com/Apoloundifinied/Oxty-Inside",
-  },
-  {
-    slug: "forge-deploy",
-    name: "Forge Deploy",
-    description: "Painel de deploy com estados de publicação, logs ao vivo e histórico de versões.",
-    cover: "/images/projects/covers/forge-deploy.webp",
-    coverLabel: "Ilustração autoral",
-    coverAlt: "Capa ilustrada de forge-deploy: gravura sobre fundo colorido",
-    screenshot: "/images/projects/forge-deploy.webp",
-
-    tags: ["Rust", "Leptos", "WebAssembly", "Axum", "Docker"],
-    status: "Concluído",
-    details: "MVP local que reúne publicação, monitoramento e rollback em uma interface. O painel em Leptos mostra o estado real dos deploys e atualiza os logs via SSE. O código e as instruções para rodar estão no GitHub.",
-    repository: "https://github.com/robsonldasilva72-gif/Forge-deploy",
   },
 ];
 

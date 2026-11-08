@@ -5,6 +5,7 @@ export type Project = {
   cover: string;
   screenshot?: string;
   tags: string[];
+  featured?: boolean;
   status: "A confirmar" | "Conceito" | "Protótipo" | "Em desenvolvimento" | "Concluído" | "Produção";
   coverLabel?: string;
   coverAlt?: string;

@@ -18,7 +18,63 @@ function ProjectDetails({ project, onClose }: { project: Project; onClose: () =>
   </dialog>;
 }
 
+function ProjectCard({ project, index, onOpen }: {
+  project: Project;
+  index: number;
+  onOpen: (project: Project) => void;
+}) {
+  return (
+    <article className={`project-card project-${project.slug}`}>
+      <button className="project-open" onClick={() => onOpen(project)} aria-label={`Ver detalhes de ${project.name}`}>
+        <div className="project-image">
+          <div className="project-cover-art">
+            <Image src={publicAsset(project.cover)} alt={project.coverAlt ?? project.name} fill sizes="(max-width: 700px) 220px, 280px" />
+          </div>
+          <strong className="project-cover-name">{project.name}</strong>
+          <span>{String(index + 1).padStart(2, "0")} / {project.status}</span>
+        </div>
+        <div className="project-copy">
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+          <ul className="project-tags">
+            {project.tags.slice(0, 4).map(tag => <li key={tag}>{tag}</li>)}
+          </ul>
+          <span className="project-link">Explorar projeto ↗</span>
+        </div>
+      </button>
+    </article>
+  );
+}
+
+const featuredProjects = projects.filter(project => project.featured);
+const labProjects = projects.filter(project => !project.featured);
+
 export function Work() {
   const [project, setProject] = useState<Project | null>(null);
-  return <section id="projetos" className="work-section content-width" aria-labelledby="work-title"><p className="eyebrow">01 / Trabalho selecionado</p><div className="section-heading"><h2 id="work-title">Projetos</h2><p>Software, automação e ferramentas em construção.</p></div><div className="project-grid">{projects.map((item, index) => <article key={item.slug} className={`project-card project-${item.slug}`}><button className="project-open" onClick={() => setProject(item)} aria-label={`Ver detalhes de ${item.name}`}><div className="project-image"><div className="project-cover-art"><Image src={publicAsset(item.cover)} alt={item.coverAlt ?? item.name} fill sizes="(max-width: 700px) 220px, 280px" /></div><strong className="project-cover-name">{item.name}</strong><span>{String(index + 1).padStart(2, "0")} / {item.status}</span></div><div className="project-copy"><h3>{item.name}</h3><p>{item.description}</p><ul className="project-tags">{item.tags.slice(0, 4).map(tag => <li key={tag}>{tag}</li>)}</ul><span className="project-link">Explorar projeto ↗</span></div></button></article>)}</div>{project && <ProjectDetails project={project} onClose={() => setProject(null)} />}</section>;
+
+  return (
+    <>
+      <section id="projetos" className="work-section content-width" aria-labelledby="work-title">
+        <p className="eyebrow">01 / Projetos em destaque</p>
+        <div className="section-heading">
+          <h2 id="work-title">Projetos</h2>
+          <p>Produto, IA, infraestrutura e automação.<br /><a className="lab-jump" href="#laboratorio">Explorar laboratório ↓</a></p>
+        </div>
+        <div className="project-grid">
+          {featuredProjects.map((item, index) => <ProjectCard key={item.slug} project={item} index={index} onOpen={setProject} />)}
+        </div>
+      </section>
+      <section id="laboratorio" className="lab-section content-width" aria-labelledby="lab-title">
+        <p className="eyebrow">Experimentos & exploração</p>
+        <div className="section-heading">
+          <h2 id="lab-title">Laboratório</h2>
+          <p>Protótipos e projetos em desenvolvimento.</p>
+        </div>
+        <div className="project-grid">
+          {labProjects.map((item, index) => <ProjectCard key={item.slug} project={item} index={index} onOpen={setProject} />)}
+        </div>
+      </section>
+      {project && <ProjectDetails project={project} onClose={() => setProject(null)} />}
+    </>
+  );
 }
