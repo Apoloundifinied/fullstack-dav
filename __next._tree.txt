@@ -1,4 +1,4 @@
-:HL["/fullstack-dav/_next/static/chunks/2cd0u1io809i2.css","style"]
+:HL["/fullstack-dav/_next/static/chunks/1r6q_0j3ju8mx.css","style"]
 :HL["/fullstack-dav/_next/static/media/jost-s.p.3hi2rzun30dbh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 1:[["children",{"s":"__PAGE__","h":160}]]
-0:{"b":"y1ujrAyvY78_ectW-EvYW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"sckJc7u1sdTtkCJxI6jp4","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

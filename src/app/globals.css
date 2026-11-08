@@ -277,10 +277,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .project-open, .project-card:nth-child(even) .project-open { display:flex; flex-direction:column; min-height:0; }
   .project-card:nth-child(even) .project-image { order:0; }
 }
-.hero::after { content:""; position:absolute; z-index:-1; inset:38% -15% -30%; background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px); background-size:38px 38px; transform:perspective(500px) rotateX(58deg) scale(1.5); transform-origin:top center; mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 75%,transparent); pointer-events:none; }
+.hero::after { content:""; position:absolute; z-index:-1; inset:38% -15% -30%; background-image:linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px); background-size:38px 38px; transform:perspective(max(200svh, 1800px)) rotateX(58deg) scale(1.5); transform-origin:top center; mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 75%,transparent); pointer-events:none; }
 .hero-feature img { width:100%; height:100%; object-fit:cover; }
 .marquee-group b { display:inline-block; width:4px; height:4px; margin-left:24px; border-radius:50%; background:var(--accent); vertical-align:middle; }
-@media(max-width:700px) { .hero::after { transform:perspective(400px) rotateX(61deg) scale(1.65); } }
+@media(max-width:700px) { .hero::after { transform:perspective(max(200svh, 1800px)) rotateX(61deg) scale(1.65); } }
 
 /* Engraved cover collection */
 .project-image { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:15px; padding:48px 24px 28px; background:var(--surface); }
