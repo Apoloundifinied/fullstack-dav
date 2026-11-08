@@ -3,6 +3,7 @@ export type Project = {
   name: string;
   description: string;
   cover: string;
+  screenshot?: string;
   tags: string[];
   status: "A confirmar" | "Conceito" | "Protótipo" | "Em desenvolvimento" | "Concluído" | "Produção";
   coverLabel?: string;
