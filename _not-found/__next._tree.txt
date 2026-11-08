@@ -1,4 +1,4 @@
-:HL["/fullstack-dav/_next/static/chunks/25kk3h7r71bsp.css","style"]
+:HL["/fullstack-dav/_next/static/chunks/0doere3pc-61x.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"ZkScwuDM1B1uyfj556c8D","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"qvvGOd7earWh8HWdyoAm3","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
