@@ -25,7 +25,7 @@ function ProjectCard({ project, index, onOpen }: {
 }) {
   return (
     <article className={`project-card project-${project.slug}`}>
-      <button className="project-open" onClick={() => onOpen(project)} aria-label={`Ver detalhes de ${project.name}`}>
+      <a className="project-open" href={project.featured ? publicAsset(`/projetos/${project.slug}/`) : `#${project.slug}`} onClick={event => { if (!project.featured) { event.preventDefault(); onOpen(project); } }} aria-label={`Ver detalhes de ${project.name}`}>
         <div className="project-image">
           <div className="project-cover-art">
             <Image src={publicAsset(project.cover)} alt={project.coverAlt ?? project.name} fill sizes="(max-width: 700px) 220px, 280px" />
@@ -41,7 +41,7 @@ function ProjectCard({ project, index, onOpen }: {
           </ul>
           <span className="project-link">Explorar projeto ↗</span>
         </div>
-      </button>
+      </a>
     </article>
   );
 }

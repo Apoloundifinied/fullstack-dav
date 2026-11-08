@@ -5,6 +5,7 @@ const pages = process.env.GITHUB_PAGES === "1";
 const config: NextConfig = pages
   ? {
       output: "export",
+      trailingSlash: true,
       basePath: "/fullstack-dav",
       distDir: "pages-out",
       images: { unoptimized: true },
