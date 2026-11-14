@@ -13,6 +13,18 @@ export const profile = {
 
 export const projects: Project[] = [
   {
+    slug: "rota",
+    featured: true,
+    name: "ROTA",
+    description: "Gateway local de modelos de IA com chat, streaming e fallback entre provedores.",
+    cover: "/images/projects/covers/rota.webp",
+    coverAlt: "Painel do ROTA com indicadores de atividade e diagrama de roteamento",
+    tags: ["Python", "FastAPI", "HTTPX", "SQLite", "Rsbuild"],
+    status: "Em desenvolvimento",
+    details: "O ROTA oferece um endpoint compatível com OpenAI e perfis que definem a ordem dos provedores. O painel reúne chat, configuração de conexões e métricas de uso. As credenciais ficam no chaveiro do sistema.",
+    repository: "https://github.com/Apoloundifinied/rota",
+  },
+  {
     slug: "aprova",
     featured: true,
     name: "Aprova",

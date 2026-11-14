@@ -1,0 +1,6 @@
+:HL["/fullstack-dav/_next/static/chunks/1ob2fmi37z7tb.css","style"]
+:HL["/fullstack-dav/_next/static/media/jost-s.p.3hi2rzun30dbh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"rota","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"projetos","h":131168,"c":"$Q2"}]]
+0:{"b":"1eI_Bs_6WHAkcqdi7kSfi","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
